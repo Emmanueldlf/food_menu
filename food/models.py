@@ -10,3 +10,4 @@ class Item(models.Model):
     item_name = models.CharField(max_length=200)
     item_desc = models.CharField(max_length=200)
     item_price = models.IntegerField()
+    item_image = models.CharField(max_length=500, default="https://cdn.kuali.com/wp-content/uploads/2021/06/01224825/840x560-Prawn-Arrabiata-Spaghetti.jpg")
