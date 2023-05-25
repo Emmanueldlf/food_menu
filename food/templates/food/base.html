@@ -18,6 +18,12 @@
       <a class="nav-item nav-link px-1" href="#">New Item</a>
     </div>
   </nav>
+  {% if messages %}
+    {% for message in messages %}
+    <div class="alert-{ message.tag }">
+      {{ message }}
+    {% endfor %}
+  {% endif %}
   {% block body %}
   {% endblock %}
 </body>
